@@ -22,7 +22,7 @@
           </h5>
         </div>
     
-        <div id="collapseOne{{$project->title}}" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+        <div id="collapseOne{{$project->title}}" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
             {{ $project->description }}
           </div>
