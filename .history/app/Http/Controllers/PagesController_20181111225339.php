@@ -8,7 +8,7 @@ class PagesController extends Controller
 {
     //
 
-    public function index(){
+    public function indec(){
         $project = Project::all();
         return view('welcome',[
             'foo' => 'Laravel',
@@ -36,12 +36,5 @@ class PagesController extends Controller
         return view('projectEdit',[
             'project' => $project->find($id)
         ]);
-    }
-    public function update($id){
-        $project = Project::find($id);
-        $project->title = request('title');
-        $project->description = request('description');
-        $project->save();
-        return redirect('/project');
     }
 }

@@ -37,8 +37,10 @@ class PagesController extends Controller
             'project' => $project->find($id)
         ]);
     }
-    public function update($id){
-        $project = Project::find($id);
+    public function update(){
+dd('hiiii');
+
+        $project = new Project();
         $project->title = request('title');
         $project->description = request('description');
         $project->save();

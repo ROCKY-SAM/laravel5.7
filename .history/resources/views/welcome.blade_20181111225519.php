@@ -24,7 +24,7 @@ This is the main page
           <button style="text-decoration: none;color: black;font-weight: bold;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne{{$project->title}}" aria-expanded="true" aria-controls="collapseOne">
               <h5>{{ $listvalue++ }}. {{ $project->title }}</h5>
             </button>
-        <a href="/project/{{ $project->id }}/edit" class="btn btn-outline-warning" >Edit</a>
+        <a href="/project/{{ $project->id }}/edit">Edit</a>
           </h5>
         </div>
     

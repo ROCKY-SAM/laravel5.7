@@ -22,9 +22,8 @@ This is the main page
         <div class="card-header" id="headingOne">
           <h5 class="mb-0">
           <button style="text-decoration: none;color: black;font-weight: bold;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne{{$project->title}}" aria-expanded="true" aria-controls="collapseOne">
-              <h5>{{ $listvalue++ }}. {{ $project->title }}</h5>
+              <h5>{{ $listvalue++ }}{{ $project->title }}</h5>
             </button>
-        <a href="/project/{{ $project->id }}/edit" class="btn btn-outline-warning" >Edit</a>
           </h5>
         </div>
     

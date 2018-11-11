@@ -14,8 +14,4 @@
 Route::get('/','PagesController@home');
 Route::get('/contact','PagesController@contact');
 Route::get('/about','PagesController@about');
-// Route::get('/project/create','PagesController@create');
-// Route::post('/project/save','PagesController@save');
-
-Route::resource('project','PagesController');
-Route::resource('students','StudentsController');
+Route::get('/project/create','PagesController@create');

@@ -37,11 +37,4 @@ class PagesController extends Controller
             'project' => $project->find($id)
         ]);
     }
-    public function update($id){
-        $project = Project::find($id);
-        $project->title = request('title');
-        $project->description = request('description');
-        $project->save();
-        return redirect('/project');
-    }
 }

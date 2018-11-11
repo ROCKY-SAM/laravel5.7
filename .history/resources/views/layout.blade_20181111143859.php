@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/project">HOME</a>
+            <a class="nav-link" href="/">HOME</a>
           </li>    
           <li class="nav-item">
             <a class="nav-link" href="/contact">CONTACT US</a>
