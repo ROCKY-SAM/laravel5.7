@@ -24,19 +24,11 @@ This is the main page
           <button style="text-decoration: none;color: black;font-weight: bold;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne{{$project->title}}" aria-expanded="true" aria-controls="collapseOne">
               <h5>{{ $listvalue++ }}. {{ $project->title }}</h5>
             </button>
-
-        <div class="row">
-            <div class="col-1">
-                <a href="/project/{{ $project->id }}/edit" class="btn btn-outline-warning" >Edit</a>
-            </div>
-            <div class="col-1">
-                <form method="POST" action="/project/{{$project->id}}">
-                    @method('DELETE')
-                    @csrf
-                    <button type="submit" class="btn btn-outline-danger" >Delete</button>
-                </form>
-            </div>
-        </div>
+        <a href="/project/{{ $project->id }}/edit" class="btn btn-outline-warning" >Edit</a>
+        <form method="POST" action="/project/{{$project->id}}">
+            <button type="submit" class="btn btn-outline-danger" >Delete</button>
+        <a href="/project/{{ $project->id }}/edit" class="btn btn-outline-danger" >Delete</a>
+        </form>
           </h5>
         </div>
     

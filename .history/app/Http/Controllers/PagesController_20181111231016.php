@@ -46,6 +46,5 @@ class PagesController extends Controller
     }
     public function destroy($id){
         Project::findorfail($id)->delete();
-        return redirect('/project');
     }
 }

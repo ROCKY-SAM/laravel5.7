@@ -26,10 +26,10 @@ This is the main page
             </button>
 
         <div class="row">
-            <div class="col-1">
+            <div class="col-3">
                 <a href="/project/{{ $project->id }}/edit" class="btn btn-outline-warning" >Edit</a>
             </div>
-            <div class="col-1">
+            <div class="col-3">
                 <form method="POST" action="/project/{{$project->id}}">
                     @method('DELETE')
                     @csrf
