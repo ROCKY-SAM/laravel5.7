@@ -24,15 +24,24 @@ class PagesController extends Controller
     public function create(){
         return view('projectCreate');
     }
-    public function store(Project $project){
-        $project->create(request(['title','description']));
+    public function store(){
+        $project = new Project();
+        $project->title = request('title');
+        $project->description = request('description');
+        $project->save();
         return redirect('/');
     }
-    public function edit(Project $project){
-        return view('projectEdit',compact('project'));
+    public function edit($id){
+        $project = new Project();
+        return view('projectEdit',[
+            'project' => $project->findorfail($id)
+        ]);
     }
-    public function update(Project $project){
-        $project->update(request(['title','description']));
+    public function update($id){
+        $project = Project::findorfail($id);
+        $project->title = request('title');
+        $project->description = request('description');
+        $project->save();
         return redirect('/project');
     }
     public function destroy(Project $project){
