@@ -29,6 +29,8 @@ class PagesController extends Controller
             'title'=>['required','min:3'],
             'description' => ['required','min:3']
         ]);
+
+
         $project->create($validate);
         return redirect('/');
     }

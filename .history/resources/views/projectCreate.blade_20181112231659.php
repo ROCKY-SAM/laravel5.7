@@ -15,7 +15,7 @@
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Description</label>
-        <textarea class="form-control" id="exampleInputPassword1" placeholder="Project Description" name="description" required>{{ old('description') }}</textarea>
+        <textarea class="form-control" id="exampleInputPassword1" placeholder="Project Description" name="description" required >{{ old('description') }}</textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
